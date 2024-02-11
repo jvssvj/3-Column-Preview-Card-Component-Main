@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary */
+    --Bright__orange: hsl(31, 77%, 52%);
+    --Dark__cyan: hsl(184, 100%, 22%);
+    --Very__dark__cyan: hsl(179, 100%, 13%);
+    
+    /* ### Neutral*/
+    --Transparent__white__paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very__light__gray__background__headings__buttons: hsl(0, 0%, 95%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: .9375rem; /*15px */
+    margin: 0em 1.2em;
+    background-color: var(--Very__light__gray__background__headings__buttons);
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    overflow: hidden;
+    width: 100%;
+    max-width: 921px;
+}
+
+.card {
+    padding: 3.2em;
+}
+
+.card--sedans {
+    background-color: var(--Bright__orange);
+}
+
+.card--suvs {
+    background-color: var(--Dark__cyan);
+}
+
+.card--luxury {
+    background-color: var(--Very__dark__cyan);
+}
+
+.title {
+    color: var(--Very__light__gray__background__headings__buttons);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.8em;
+    margin: 2.5rem 0em;
+}
+
+.paragraph {
+    color: var(--Transparent__white__paragraphs);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.8rem;
+}
+
+.btn {
+    width: 100%;
+    height: 49px;
+    max-width: 147px;
+    border-radius: 1.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 3.18rem;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.92);
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: .2rem solid var(--Very__light__gray__background__headings__buttons);
+    color: var(--Very__light__gray__background__headings__buttons);
+}
+
+.card__sedan__btn {
+    color: var(--Bright__orange);
+}
+
+.card__suv__btn {
+    color: var(--Dark__cyan);
+}
+
+.card__luxury__btn {
+    color: var(--Very__dark__cyan);
+}
+
+.attribution {
+    position: absolute;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: .5rem;
+    text-align: center;
+    font-size: .8rem;
+    margin-top: 72em;
+}
+
+.attribution a {
+    color: hsl(31, 77%, 52%);
+}
+
+@media (max-width:920px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .attribution {
+        position: unset;
+        margin-top: 10em;
+    }
+}
