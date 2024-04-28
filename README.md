@@ -24,7 +24,7 @@
 <div align='center'>
   <h2>Preview</h2>
   <img src="./design/desktop-preview.jpg" alt="3 Column Preview Card Component Main Preview">
-  <p>Design preview for the 3 Column Preview Card Component Main coding challenge.</p>
+  <p>Design preview for the 3 Column Preview Card Component Main challenge.</p>
 </div>
 
 <br>
